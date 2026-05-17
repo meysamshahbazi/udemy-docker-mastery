@@ -15,7 +15,7 @@ services:
     # but if you want to hardcode the name to something differnt, you can set it
     image: nginx-custom
     ports:
-      - '80:80'
+      - '81:80'
   web:
     image: httpd
     volumes:

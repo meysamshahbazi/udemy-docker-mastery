@@ -1,9 +1,6 @@
-  # create your drupal and postgres config here, based off the last assignment
-
 services:
   server:
-    image: custom-drupal
-    build: .
+    image: drupal:latest # this will use the latest version of 1.23
     ports:
       # NOTE: if port 80 is already in use on your host, this won't work
       # in that case, change to any high port, like '8000:80'

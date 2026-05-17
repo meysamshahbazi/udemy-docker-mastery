@@ -138,7 +138,7 @@ RUN set -x \
 # COPY 30-tune-worker-processes.sh /docker-entrypoint.d
 # ENTRYPOINT ["/docker-entrypoint.sh"]
 #
-EXPOSE 80
+EXPOSE 80 443 
 
 STOPSIGNAL SIGQUIT
 

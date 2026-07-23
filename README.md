@@ -2,6 +2,18 @@
 
 - [ ] 04. Creating and Using Containers Like a Boss 20. Assignment DNS Round Robin Test
 
+- [ ] 09. Swarm Intro and Creating a 3-Node Swarm Cluster
+
+- [ ] 10. Swarm Basic Features and How to Use Them In Your Workflow
+
+- [ ] 11. Swarm App Lifecycle
+
+- [ ] 12. Container Registries Image Storage and Distribution
+
+- [ ] 13. Docker in Production
+
+sudo snap install microk8s --classic
+
 # Udemy Course Docker Mastery: with Kubernetes+Swarm from a Docker Captain
 
 [![](https://dcbadge.limes.pink/api/server/devops)](https://discord.gg/devops)

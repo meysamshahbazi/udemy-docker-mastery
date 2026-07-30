@@ -1,0 +1,24 @@
+name: Deploy Multi Docker 
+on:
+  push:
+    branches: 
+      - main
+    paths: 
+      - complex/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Log in to DockerHub Container Registry
+        uses: docker/login-action@v4
+        with:
+          registry: docker.io
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # - run: docker build -t meysamshahbazi/react-test-up -f ./complex/client/Dockerfile.dev ./complex/client
+      - run: docker build -t meysamshahbazi/multi-client-up ./complex/client
+      - run: docker push meysamshahbazi/multi-client-up
+    
